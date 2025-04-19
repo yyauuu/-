@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA 详解</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        .definition {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .history {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .purpose {
+            background-color: #eaf7ea;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .types {
+            margin-top: 20px;
+        }
+        .type-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CAPTCHA 详解</h1>
+    
+    <div class="definition">
+        <h2>什么是 CAPTCHA？</h2>
+        <p><strong>CAPTCHA</strong> (Completely Automated Public Turing test to tell Computers and Humans Apart) 中文译为"全自动区分计算机和人类的图灵测试"，是一种用于区分人类用户和自动化程序(机器人)的技术。</p>
+        <p>它通常表现为用户需要完成的一个小测试，如识别扭曲的文字、选择特定图片或解决简单数学问题等，这些对人类来说相对容易但对计算机程序来说则较为困难。</p>
+    </div>
+    
+    <div class="history">
+        <h2>CAPTCHA 的起源</h2>
+        <p>CAPTCHA 的概念最早可以追溯到1997年，当时 AltaVista 公司试图阻止自动提交的URL影响其搜索引擎结果。</p>
+        <p>现代意义上的 CAPTCHA 是由 Luis von Ahn、Manuel Blum、Nicholas Hopper 和 John Langford 在2000年正式提出并命名。最初的目的是为了保护网站免受自动程序的垃圾邮件和滥用。</p>
+        <p>2003年，这些研究者创建了第一个广泛使用的CAPTCHA系统，被雅虎采用来防止机器人自动注册邮箱账户。</p>
+    </div>
+    
+    <div class="purpose">
+        <h2>为什么需要 CAPTCHA？</h2>
+        <p>CAPTCHA 主要被设计来解决以下问题：</p>
+        <ul>
+            <li><strong>防止垃圾邮件</strong>：阻止机器人自动提交表单、注册账户或发布评论</li>
+            <li><strong>保护账户安全</strong>：防止暴力破解密码的自动化尝试</li>
+            <li><strong>防止票务抢购</strong>：限制机器人大量抢购门票或商品</li>
+            <li><strong>保护在线投票</strong>：确保投票是由真实人类完成的</li>
+            <li><strong>防止数据抓取</strong>：限制自动化程序大规模抓取网站数据</li>
+        </ul>
+    </div>
+    
+    <div class="types">
+        <h2>常见的 CAPTCHA 类型</h2>
+        
+        <div class="type-item">
+            <h3>文本 CAPTCHA</h3>
+            <p>用户需要识别并输入扭曲、模糊或带有干扰线的文字。这是最早也是最常见的类型。</p>
+        </div>
+        
+        <div class="type-item">
+            <h3>图像 CAPTCHA</h3>
+            <p>用户需要从一组图片中选择符合特定要求的图片，如"选择所有包含交通灯的图片"。</p>
+        </div>
+        
+        <div class="type-item">
+            <h3>音频 CAPTCHA</h3>
+            <p>为视障用户设计，用户需要听并输入听到的单词或数字序列。</p>
+        </div>
+        
+        <div class="type-item">
+            <h3>数学 CAPTCHA</h3>
+            <p>用户需要解决简单的数学问题，如"3 + 5 = ?"。</p>
+        </div>
+        
+        <div class="type-item">
+            <h3>reCAPTCHA</h3>
+            <p>由Google开发的高级CAPTCHA系统，最初用于帮助数字化书籍，现在演变为更智能的验证方式，如只需勾选"我不是机器人"。</p>
+        </div>
+    </div>
+    
+    <p>随着人工智能的发展，传统的CAPTCHA技术也在不断进化，以应对越来越智能的自动化程序。现代CAPTCHA系统更加注重用户体验，同时保持安全性。</p>
+</body>
+</html>
